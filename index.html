@@ -1,0 +1,59 @@
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> </link>
+</head>
+
+<body>  
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td>Webmaster</td>
+                <td>example@email.com</td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>User123</td>
+                <td>example@email.com</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="user-form">
+        <div>
+            <label for="input-username">Username:</label>
+            <input type="text" id="input-username" required>
+        </div>
+        
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="text" id="input-email" required>
+        </div>
+        
+        <div>
+            <label for="input-admin">Admin:</label>
+            <input type="checkbox" id="input-admin">
+        </div>
+
+        <div>
+            <label for="input-image">Image:</label>
+            <input type="file" id="input-image" accept="image/*">
+        </div>
+
+        <button type="submit" id="submit-data">Submit Data</button>
+        <button type="button" id="empty-table">Empty Table</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
